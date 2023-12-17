@@ -1,0 +1,31 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: TEST Matter Bridge
+version: '0.0.1-alpha.1'
+slug: test-matter-bridge
+description: A Matter Bridge add-on build with matter.js for Home Assistant
+url: 'https://github.com/hatles/ha-matter-bridge-addon'
+stage: experimental
+arch:
+    - armhf
+    - armv7
+    - aarch64
+    - amd64
+    - i386
+init: false
+startup: services
+homeassistant_api: true
+boot: auto
+ports:
+    5540/tcp: 5540
+    5540/udp: 5540
+    5353/tcp: 5353
+    5353/udp: 5353
+ports_description:
+    5540/tcp: matter port
+    5540/udp: matter port
+    5353/tcp: mdns port
+    5353/udp: mdns port
+#host_network: true
+#image: "ghcr.io/home-assistant/{arch}-ha-test-matter-bridge-addon"
+#image: "{arch}-ha-matter-bridge-addon"
+#image: '192.168.1.92:5000/ha-matter-bridge'

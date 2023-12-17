@@ -1,0 +1,4 @@
+[submodule "matter-bridge/src/ha-matter-bridge"]
+	path = matter-bridge/src/ha-matter-bridge
+	url = git@github.com:Hatles/ha-matter-bridge.git
+	branch = ha-addon-docker
