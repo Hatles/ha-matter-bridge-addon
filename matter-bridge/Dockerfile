@@ -10,12 +10,12 @@ FROM ghcr.io/home-assistant/amd64-base as base-node
 # install node and npm
 #ARG NODE_VERSION="18.18.2-r0"
 #ARG NPM_VERSION="9.6.6-r0"
-RUN #apk update && apk add nodejs="$NODE_VERSION" npm="$NPM_VERSION" icu-data-full
+# RUN apk update && apk add nodejs="$NODE_VERSION" npm="$NPM_VERSION" icu-data-full
 RUN apk update && apk add nodejs npm icu-data-full
 
 # log install packages versions
-RUN node -v
-RUN npm -v
+RUN node --version
+RUN npm --version
 
 ###################
 # BUILD FOR LOCAL DEVELOPMENT
