@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Matter Bridge
-version: '0.0.1-alpha.3'
+version: '0.0.2'
 slug: matter-bridge
 description: A Matter Bridge add-on build with matter.js for Home Assistant
 url: 'https://github.com/Hatles/ha-matter-bridge-addon'
