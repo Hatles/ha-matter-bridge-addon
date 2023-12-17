@@ -1,11 +1,11 @@
 ﻿# docker build -t ha-matter-bridge-addon .
 # docker run --rm --network host ha-matter-bridge-addon
 
-#ARG BUILD_FROM
-#FROM $BUILD_FROM as base-node
+ARG BUILD_FROM
+FROM $BUILD_FROM as base-node
 
-ARG BUILD_FROM=ghcr.io/home-assistant/amd64-base
-FROM ghcr.io/home-assistant/amd64-base as base-node
+#ARG BUILD_FROM=ghcr.io/home-assistant/amd64-base
+#FROM ghcr.io/home-assistant/amd64-base as base-node
 
 # install node and npm
 #ARG NODE_VERSION="18.18.2-r0"
